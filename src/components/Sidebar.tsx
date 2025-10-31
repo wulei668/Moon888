@@ -127,17 +127,17 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
   const [menuItems, setMenuItems] = useState([
     {
       icon: Film,
-      label: '电影',
+      label: '柯某人推荐的电影',
       href: '/douban?type=movie',
     },
     {
       icon: Tv,
-      label: '剧集',
+      label: '柯某人推荐剧集',
       href: '/douban?type=tv',
     },
     {
       icon: Clover,
-      label: '综艺',
+      label: '柯某人推荐的综艺',
       href: '/douban?type=show',
     },
   ]);
@@ -149,7 +149,7 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
         ...prevItems,
         {
           icon: Star,
-          label: '自定义',
+          label: '粤西柯某二次开发小盒子，请勿用于盈利，否则后果自负',
           href: '/douban?type=custom',
         },
       ]);
