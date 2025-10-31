@@ -21,21 +21,21 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   const currentActive = activePath ?? pathname;
 
   const [navItems, setNavItems] = useState([
-    { icon: Home, label: '首页', href: '/' },
-    { icon: Search, label: '搜索', href: '/search' },
+    { icon: Home, label: '粤西柯某人的Home', href: '/' },
+    { icon: Search, label: '粤西柯某人推荐全网爬虫搜索', href: '/search' },
     {
       icon: Film,
-      label: '电影',
+      label: '推荐电影',
       href: '/douban?type=movie',
     },
     {
       icon: Tv,
-      label: '剧集',
+      label: '推荐剧集',
       href: '/douban?type=tv',
     },
     {
       icon: Clover,
-      label: '综艺',
+      label: '推荐综艺',
       href: '/douban?type=show',
     },
   ]);
